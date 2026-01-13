@@ -13,7 +13,9 @@ def comprobar_ganador(x, y, tablero):
     # Miramos hacia la izquierda y derecha
 
     victoria_fila = True
-
+    for col in range(tamanyo):
+        if tablero[x][col] != jugador:
+            victoria_fila = False
     # TODO: comprobacion
     pass
     
